@@ -14,7 +14,7 @@ steps:
 
   - label: ":shell: Shellcheck"
     plugins:
-     - docker#v5.10.0:
+      - docker#v5.10.0:
           image: "docker:latest"
       - shellcheck#v1.3.0:
           files: hooks/**
