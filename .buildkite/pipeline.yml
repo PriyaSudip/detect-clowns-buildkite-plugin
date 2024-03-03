@@ -1,20 +1,14 @@
 steps:
   - label: "🤡 :hammer:"
     plugins:
-      - docker#v5.10.0:
-          image: "docker:latest"
       - plugin-tester#v1.1.1: ~
 
   - label: ":sparkles: lint"
     plugins:
-      - docker#v5.10.0:
-          image: "docker:latest"
       - plugin-linter#v3.3.0:
           id: detect-clowns
 
   - label: ":shell: Shellcheck"
     plugins:
-      - docker#v5.10.0:
-          image: "docker:latest"
       - shellcheck#v1.3.0:
           files: hooks/**
