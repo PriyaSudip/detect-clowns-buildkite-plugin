@@ -1,5 +1,6 @@
 steps:
   - label: "🤡 :hammer:"
+    command: pip install docker
     plugins:
       - plugin-tester#v1.1.1: ~
 
