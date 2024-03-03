@@ -1,14 +1,17 @@
 steps:
   - label: "🤡 :hammer:"
+    queue: "default-queue"
     plugins:
       - plugin-tester#v1.1.1: ~
 
   - label: ":sparkles: lint"
+    queue: "default-queue"
     plugins:
       - plugin-linter#v3.3.0:
           id: detect-clowns
 
   - label: ":shell: Shellcheck"
+    queue: "default-queue"
     plugins:
       - shellcheck#v1.3.0:
           files: hooks/**
